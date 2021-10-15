@@ -1,9 +1,8 @@
 function onClick(e) {
   e.preventDefault();
   // get form values
-  let number = document.getElementById('number').value;
-  let s = document.getElementById('selector');
-  let type = s.options[s.selectedIndex].value;
+  let artist = document.getElementById('artist').value;
+  let title = document.getElementById('title').value;
 
   // check if number is empty
   if (number === "") {
@@ -28,8 +27,8 @@ function onClick(e) {
     });
 }
 
-function updateResult(info) {
-  document.getElementById('results').textContent = info;
+function updateResult(lyrics) {
+  document.getElementById('result').textContent = lyrics;
 }
 
-document.getElementById('woo').addEventListener('click', onClick);
+document.getElementById('lyrics').addEventListener('click', onClick);
