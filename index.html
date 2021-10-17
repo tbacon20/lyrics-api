@@ -4,30 +4,35 @@
 <head>
   <meta charset="utf-8" />
   <title>Lyric Finder</title>
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
-  <link rel="stylesheet" href="/styles.css">
+  <!--link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"-->
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
+  <div class="card">
   <h1>Lyric Finder</h1>
 
   <p>This app uses the <a href="https://lyricsovh.docs.apiary.io/">Lyrics API</a> to
     get the lyrics for songs.</p>
 
-  <form class="pure-form>" <fieldset>
-    <legend>Here is the official lyric finder!!!</legend>
-    <input placeholder="artist" id="artist">
-    <input placeholder="title" id="title">
-    <br>
-    <p></p>
-    <p></p>
-    <button id="lyrics" class="pure-button pure-button-primary">Click for Lyrics!</button>
-    </fieldset>
-  </form>
-  <p id="result"></p>
 
-  <script text="type/javascript" src="/script-lyrics.js">
+      <form class="custom-form"> <fieldset>
+        <input placeholder="Artist Name" id="artist">
+        <input placeholder="Song Title" id="title">
+        <br>
+        <p></p>
+        <p></p>
+        <button id="lyrics">Click for Lyrics!</button>
+        </fieldset>
+      </form>
+      <p id="result"></p>
+    </div>
+
+    <div class="github">
+      <button><a href="https://github.com/tbacon20/lyrics-api" target="_blank">GitHub</a></button>
+    </div>
+  <script text="type/javascript" src="lyrics.js">
   </script>
 
 </body>

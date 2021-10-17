@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Verdana, Arial;
+  background-image: url('bg.jpg');
+  background-size: 200vh;
+  background-position: top;
+}
+
+
+.page {
+
+}
+
+.card {
+  width: 600px;
+  margin: 100px auto;
+  background-color: #6D4FFF;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border-style: none;
+}
+
+button {
+  font-family: Verdana, Arial;
+  font-size: 1em;
+  padding: 2px 25px 2px 25px;
+  border-width: thin;
+  border-radius: 15px;
+  background-color: #E45CFF;
+}
+
+button:hover {
+  background-color: #EB27B1;
+  border-color: black;
+  border-width: medium;
+}
+
+button a {
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+li {
+  margin-top: 10px;
+}
+
+img {
+  margin-top: 50px;
+}
+
+#result {
+  margin-top: 15px;
+}
+
+.github {
+  border-top: solid 2px black;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: #6D4FFF;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    width: 100%;
+    border-radius: 0px;
+    margin: 0 auto;
+    padding: 15px 0 15px;
+  }
+  input {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  fieldset {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,5 +1,6 @@
 function onClick(e) {
   e.preventDefault();
+  alert("handler for click called")
   // get form values
   let artist = document.getElementById('artist').value;
   let title = document.getElementById('title').value;
