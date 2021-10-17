@@ -8,6 +8,12 @@ function findLyrics(event) {
 
    fetch(url)
     .then(function(response) {
+      if (response === "" || response === "undefined") {
+        nope = "Sorry, couldn't find any lyrics!" +
+        '</br>' + "Check your spelling or try another song!"
+        return
+      }
+
       return response.json();
     }).then(function(json) {
       console.log(json);
